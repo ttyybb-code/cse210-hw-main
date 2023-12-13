@@ -21,7 +21,7 @@ public abstract class Activity
         return _Time;
     }
 
-    public abstract int GetDistance();
-    public abstract int GetSpeed();
-    public abstract int GetPace();   
+    public abstract double GetDistance();
+    public abstract double GetSpeed();
+    public abstract double GetPace();   
 }

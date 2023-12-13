@@ -9,15 +9,16 @@ public class Running : Activity
         _Distance = distance;
     }
 
-    public override int GetDistance()
+    public override double GetDistance()
     {
         return _Distance;
     }
-    public override int GetSpeed()
+    public override double  GetSpeed()
     {
+
         return _Distance/ GetTime() * 60;
     }
-    public override int GetPace()
+    public override double GetPace()
     {
         return GetTime() / _Distance;
     }

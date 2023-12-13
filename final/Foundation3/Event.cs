@@ -21,16 +21,16 @@ public abstract class Event
 
     public string StandardDetails()
     {
-        return $"{_Title} {_Description} {_Date} {_Time} {_Address}";
+        return $"{_Title} {_Description} {_Date} {_Time} {_Address.GetAddress()}";
     }
     public string GetTitle()
     {
         return _Title;
     }
 
-    public Address GetAddress()
+    public string GetAddress()
     {
-        return _Address;
+        return _Address.GetAddress();
     }
     public string GetTime()
     {
