@@ -2,7 +2,7 @@ using System.Diagnostics;
 
 public class Running : Activity
 {
-    private int _Distance;
+    private double _Distance;
 
     public Running(string date, int time, string name, int distance) : base(date, time, name)
     {
